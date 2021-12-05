@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+		<title>MIREA_NAV</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/burger.css" />
+		<link rel="stylesheet" media="screen and (color)" href="example.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function() {
+                if($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                 }
+            });
+
+        $('#toTop').click(function() {
+            $('body,html').animate({scrollTop:0},800);
+            });
+        });
+        </script>
+
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Контент -->
+			<header class="header">
+				<div class="container">
+					<div class="navigation">
+						<div class="logo">
+							<a href="index.html">
+								<img src="./img/mirea-logo.png" alt="">
+							</a>
+						</div>
+						<div class="burger">
+							<span></span>
+						</div>
+						<nav class="nav-menu">
+							<ul class="list">
+								<li>
+									<a href="map.html">Карта</a>
+								</li>
+								<li>
+									<a href="about.html">О МИРЭА</a>
+								</li>
+								<li>
+									<a href="contacts.html">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<main class="page">
+				<div class="container">
+					<div style="overflow:hidden;width: 700px;position: relative;"><iframe width="700" height="440" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=Rtu%20Mirea%20prospekti%20Vernadskogo%2C%2078%2C%20Moscow%2C%20119454+(%D0%9C%D0%98%D0%A0%D0%AD%D0%90)&amp;ie=UTF8&amp;t=&amp;z=17&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;"><small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a href="https://embedgooglemaps.com/fr/">https://embedgooglemaps.com/fr/</a> & <a href="https://youronlinecasino.org/">youronlinecasino.org</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><br />
+                    <br>
+                    <div class="contacts">
+                        <p>
+                            Схема проезда: <br><br>
+
+                            От м. «Юго-Западная» - автобус 227, 667 до остановки «Академия народного хозяйства» (выход из первого вагона налево)<br>
+                            От м. «Юго-Западная» пешком около 10 мин (выход из последнего вагона налево).
+                        </p><br>
+
+                        <h2>Кампус на Проспекте Вернадского, 78</h2>
+                        <p>
+                            Адрес: 119454, ЦФО, г. Москва, Проспект Вернадского, д. 78<br>
+                            Контактный телефон: +7 499 215-65-65<br>
+                            Электронная почта: rector@mirea.ru<br>
+                        </p>
+                    </div>
+                </div>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__row">
+						Почта: maxan126@icloud.com
+						Конт.телефон: +7(903)7358600
+					</div>
+				</div>
+			</footer>
+		</div>
+        <DIV ID = "toTop" > ^ Наверх </DIV>
+		<!-- Подключаем файл JS скриптов -->
+		<script src="js/script.js"></script>
+		<script src="js/burger.js"></script>
+	</body>
+</html> 

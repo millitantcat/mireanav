@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
+		<title>MIREA_NAV</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/burger.css" />
+		<link rel="stylesheet" media="screen and (color)" href="example.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            $(window).scroll(function() {
+                if($(this).scrollTop() != 0) {
+                    $('#toTop').fadeIn();
+                } else {
+                    $('#toTop').fadeOut();
+                 }
+            });
+
+        $('#toTop').click(function() {
+            $('body,html').animate({scrollTop:0},800);
+            });
+        });
+        </script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!-- Контент -->
+			<header class="header">
+				<div class="container">
+					<div class="navigation">
+						<div class="logo">
+							<a href="index.html">
+								<img src="./img/mirea-logo.png" alt="">
+							</a>
+						</div>
+						<div class="burger">
+							<span></span>
+						</div>
+						<nav class="nav-menu">
+							<ul class="list">
+								<li>
+									<a href="map.html">Карта</a>
+								</li>
+								<li>
+									<a href="about.html">О МИРЭА</a>
+								</li>
+								<li>
+									<a href="contacts.html">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+
+			<main class="page">
+				<div class="container">
+					<div class="three-block">
+						<h1 class="three-block__title">МИРЭА - Российский технологический университет</h1>
+						<div class="three-block__row">
+							<div class="three-block__column">
+								<div class="three-block__item">
+									<a href="./map.html">
+									<div class="three-block__image">
+										<img src="img/content/mirea1-1.png" alt="">
+									</div>
+									</a>
+									<div class="three-block__text">
+										Карта кампуса на проспекте Вернадского 78 для упрощения навигации по ВУЗу. 
+									</div>
+								</div>
+							</div>
+							<div class="three-block__column">
+								<div class="three-block__item">
+									<div class="three-block__image">
+										<a href="./about.html">
+										<img src="img/content/mirea2-1.png" alt="">
+									</div>
+									</a>
+									<div class="three-block__text">
+										Информация о РТУ МИРЭА, траектории развития и обучении.
+									</div>
+								</div>
+							</div>
+							<div class="three-block__column">
+								<div class="three-block__item">
+									<div class="three-block__image">
+									<a href="./contacts.html">
+										<img src="img/content/mirea3-1.png" alt="">
+									</div>
+									</a>
+									<div class="three-block__text">
+										Адреса, контакты, телефонный справочник РТУ МИРЭА.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__row">
+						Почта: maxan126@icloud.com
+						Конт.телефон: +7(903)7358600
+					</div>
+				</div>
+			</footer>
+		</div>
+		<DIV ID = "toTop" > ^ Наверх </DIV>
+		<!-- Подключаем файл JS скриптов -->
+		<script src="js/script.js"></script>
+		<script src="js/burger.js"></script>
+	</body>
+</html>
